@@ -58,7 +58,7 @@ z Webshopu:
 | Pole wnioskowane | Status | Źródło (tabela.kolumna) |
 |---|---|---|
 | Numer klienta | ✅ | `T_ACCOUNT.ACCOUNT_NUMBER` / `T_SOLDTO.SOLDTO_NUMBER` / `T_SHIPTO.SHIPTO_NUMBER` |
-| Dane kontaktowe | ✅ | `T_ECOM_ACCOUNT` (`USER_EMAIL`, `USER_PHONE_NUMBER`, `USER_NAME`), `T_ACCOUNT` |
+| Dane kontaktowe | 🟡 CZĘŚCIOWO | `T_ECOM_ACCOUNT` (`USER_EMAIL`, `USER_PHONE_NUMBER`, `USER_NAME`), `T_ACCOUNT` - tu uwaga, bo mamy wszystkie kontakty (wiele na rekord), ciężkie do pokazania |
 | Adres | ✅ | `T_ACCOUNT` (`STREET`, `BUILDING`, `ZIP_CODE`, `CITY`, `GPS_LATITUDE/LONGITUDE`) |
 | NIP | ✅ | `T_PAYER.TAX_NUMBER1` (normalizacja `REGEXP_REPLACE(...,'[^0-9]','')`) |
 | Cennik | ✅ | `T_SOLDTO.PRICE_LIST_CODE` (+ `PRICE_BAND_CODE`) |
