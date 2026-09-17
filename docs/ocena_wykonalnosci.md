@@ -77,7 +77,7 @@ z Webshopu:
 | Listy dopuszczeń i wykluczeń | 🟡 CZĘŚCIOWO | słownik `SHARED.T_EXCLUSION_LIST`; przypisanie **wykluczeń** na poziomie produktu: `T_ACCOUNT_PRODUCT.EXCLUSION_LIST_CODE`. Brak jawnej **listy dopuszczeń** (najbliżej: `EXCLUSIVE_PROPOSAL`) |
 | Numer zamówienia klienta | 🟡 CZĘŚCIOWO | `T_INVOICE_LINE` / `T_ORDER_LINE`: `PURCHASE_ORDER_NUMBER`, `BLANKET_PO_NUMBER` — to dane **transakcyjne** (per linia dokumentu), nie stałe ustawienie klienta |
 | MPK (numery, na których założone) | 🟡 CZĘŚCIOWO | `T_SF_PARTNER.COST_CENTER_FLAG` = tylko **flaga** „czy klient używa MPK". Kolumna `MPK` istnieje wyłącznie w tabeli szkoleń `T_LD_MANDAYS_TRAININGS_EMPLOYEE` (niezwiązana z klientem). **Brak numerów MPK per odbiorca** |
-| Opłata administracyjna | 🟡 / ❌ | są opłaty transportowe: `DELIVERY_CHARGE_AMOUNT`, `FREIGHT_CHARGES_AMOUNT`, `DEPOSIT_FEE` — **brak jawnej „opłaty administracyjnej"** jako osobnej pozycji |
+| Opłata administracyjna | 🟡  | są opłaty transportowe: `DELIVERY_CHARGE_AMOUNT`, `FREIGHT_CHARGES_AMOUNT`, `DEPOSIT_FEE` |
 | **BPO** (numery + rodzaje BPO) | ❌ BRAK | brak jakiejkolwiek kolumny/tabeli BPO w HALO (jedyne „BPO" w danych to fragment nazwy firmy). Funkcja Webshopu — nie replikowana do Oracle |
 | **Budżety** (wartości + okresy obowiązywania) | ❌ BRAK | tabele `*_BUDGET` (`T_SALES_BL_BUDGET`, `T_SALES_SD_BUDGET`, `T_SALES_BL_BUDGET_PER_SECTION`…) dotyczą **wewnętrznych targetów sprzedaży** per Business Line/Section, a nie budżetów zakupowych klienta z Webshopu |
 | **Podpięty minikatalog** | ❌ BRAK | brak powiązania klient → minikatalog (jest tylko flaga `NBS_KATALOG` oraz `CATALOG_PAGE` na poziomie produktu) |
