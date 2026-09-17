@@ -72,7 +72,7 @@ z Webshopu:
 |---|---|---|
 | Data ostatniego zamówienia | ✅ MAMY | `T_SOLDTO.LAST_ORDER_DATE` (+ `FIRST_ORDER_DATE`, `LAST_SALES_ACTIVITY_DATE`) |
 | Eksperci PPE / Higiena / NBS | ✅ MAMY | `POLAND.T_SALES_REP_VS_EXPERT`: `EXPERT_PPE`, `EXPERT_HYG` (Higiena), `EXPERT_NBS`, `EXPERT_IS` — join po `AREA_CODE` |
-| Promocje | ❌ **BRAK w HALO**Y | Brak danych VISTEX|
+| Promocje | ❌ **BRAK** | Brak danych VISTEX|
 | Godziny dostaw / otwarcia | ✅ MAMY (semantyka do potwierdzenia) | `T_SITI_CUSTOMER_OPENING_HOURS` (`MONDAY_OPENING_HOURS`…`FRIDAY_OPENING_HOURS`), `T_SF_PARTNER` (`START_OPENING_HOUR`, `END_OPENING_HOUR`), `T_SF_PARTNER_BUSINESS.DELIVERY_TIME_CODE` |
 | Listy dopuszczeń i wykluczeń | 🟡 CZĘŚCIOWO | słownik `SHARED.T_EXCLUSION_LIST`; przypisanie **wykluczeń** na poziomie produktu: `T_ACCOUNT_PRODUCT.EXCLUSION_LIST_CODE`. Brak jawnej **listy dopuszczeń** (najbliżej: `EXCLUSIVE_PROPOSAL`) |
 | Numer zamówienia klienta | 🟡 CZĘŚCIOWO | `T_INVOICE_LINE` / `T_ORDER_LINE`: `PURCHASE_ORDER_NUMBER`, `BLANKET_PO_NUMBER` — to dane **transakcyjne** (per linia dokumentu), nie stałe ustawienie klienta |
